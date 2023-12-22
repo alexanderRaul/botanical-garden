@@ -20,7 +20,7 @@ function Item({ item, index, handleItemSelect }: any) {
       >
         <Image
           className="object-contain"
-          src="/tree.png"
+          src="/trees/crataegus-monogyna.png"
           alt="img"
           fill
         />
