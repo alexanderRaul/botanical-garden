@@ -16,9 +16,9 @@ export default function Creative() {
         </div>
         <div className="w-auto flex justify-center items-center mt-[32px] ml-auto mr-auto sm:w-[51ch] sm:mt-[42px]">
           <div className="text-center tracking-[.05em] leading-[1.2] text-[4.25em] sm:text-sm">
-            Whether it's another late night with a client project,
+            Whether it&apos;s another late night with a client project,
             or an early finance review — our ambition is being in the moment,
-            and giving your entire mind and body to the "now".
+            and giving your entire mind and body to the &quot;now&quot;.
           </div>
         </div>
       </div>

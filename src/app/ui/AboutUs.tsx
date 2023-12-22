@@ -26,7 +26,7 @@ export default function AboutUs() {
 
         <div className="mt-[182px]">
           <div className="text-[4.2em] w-[21.7ch] sm:w-[22ch] sm:text-[1.4em] tracking-[.02em]">
-            In a world full of distractions, it's time to take back our focus.
+            In a world full of distractions, it&apos;s time to take back our focus.
           </div>
 
           <div className="sm:w-[78ch] my-[192px] sm:mr-auto sm:ml-auto">

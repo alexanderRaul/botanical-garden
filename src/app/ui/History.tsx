@@ -42,7 +42,7 @@ export default function History() {
               </p>
 
               <p className="mt-[16px]">
-                So, join us for a coffee in the lounge or a drink at the rooftop bar and let's talk about tattoos!
+                So, join us for a coffee in the lounge or a drink at the rooftop bar and let&apos;s talk about tattoos!
               </p>
             </div>
           </div>
