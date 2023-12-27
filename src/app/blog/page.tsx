@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <Wrapper>
       <div className="py-[72px]">
-        <h2 className="text-[11em] tracking-tight">Blog</h2>
+        <h2 className="text-[15em] sm:text-[11em] tracking-tight">Blog</h2>
 
         <Suspense fallback={<>Loading blog posts ...</>}>
           <Blogs />
