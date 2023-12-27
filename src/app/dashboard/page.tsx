@@ -26,7 +26,7 @@ async function BlogPostsSummaries() {
 
   return (
     <>
-      <ul className="divide-y divide-black mt-[2em]">
+      <ul className="divide-y mt-[2em]">
         {blogsPostsSummaries.map(({ title, publication_date, id }) =>
           <li key={id} className="flex justify-between">
             <div>{title}</div>
@@ -43,7 +43,7 @@ async function EventsSummaries() {
 
   return (
     <>
-      <ul className="divide-y divide-black mt-[2em]">
+      <ul className="divide-y mt-[2em]">
         {eventsSummaries.map(({ title, date, id }) =>
           <li key={id} className="flex justify-between">
             <div>{title}</div>

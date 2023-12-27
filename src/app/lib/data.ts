@@ -1,5 +1,16 @@
 import { sql } from '@vercel/postgres';
-import { BlogPost, Event } from './definitions';
+import { BlogPost, Event, Tree } from './definitions';
+
+export async function fetchTrees() {
+  try {
+    const data = await sql<Tree>`SELECT * FROM trees`
+    return data.rows;
+  } catch (error) {
+
+    console.error('Database Error:', error);
+    throw new Error('Failed to fetch events data.');
+  }
+}
 
 export async function fetchBlogById(id: string) {
   try {

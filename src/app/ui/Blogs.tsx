@@ -7,7 +7,7 @@ export default async function Blogs() {
   console.log(blogs);
 
   return (
-    <ul className="text-[2em] mt-[72px] divide-y divide-black">
+    <ul className="text-[2em] mt-[72px] divide-y">
       {blogs.map(({ id, title }) =>
         <li
           className="py-[12px] text-[1.25em]"
