@@ -1,4 +1,4 @@
-import Image from 'next/image';
+//import Image from 'next/image';
 import { alpinaFine, romanFont } from "../fonts/localFonts";
 
 export default function Hero() {
@@ -10,7 +10,7 @@ export default function Hero() {
           <span className={`block ${alpinaFine.className} tracking-[-.04em] text-[8.6em]`}>Martin Cárdenas</span>
         </h1>
       </div>
-      <div
+      {/* <div
         className="z-[0] w-[68em] h-[92em] ml-auto mr-auto fixed top-[20%] bottom-[0%] left-[0%] right-[0%] flex items-center justify-center sm:w-[29em] sm:h-[38em]">
         <div className="relative w-full h-full ">
           <Image
@@ -21,7 +21,7 @@ export default function Hero() {
           />
         </div>
         <div className="z-[1] w-full h-full absolute bg-[rgba(2,2,2,.70)]" />
-      </div>
+      </div>*/}
     </div>
   );
 }

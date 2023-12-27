@@ -1,6 +1,5 @@
 const blogPosts = [
   {
-    id: '1',
     title: 'Explorando la Biodiversidad del Jardín Botánico',
     content: `
       Bienvenidos a nuestro blog, donde exploraremos la asombrosa biodiversidad que se encuentra en nuestro querido Jardín Botánico.
@@ -25,7 +24,6 @@ const blogPosts = [
     publication_date: '2023-03-01',
   },
   {
-    id: '2',
     title: 'Secretos de los Jardines Históricos',
     content: `
       Descubre los secretos ocultos en los rincones históricos de nuestro Jardín Botánico. En esta entrada, exploraremos los jardines que han resistido el paso del tiempo y han contado historias a lo largo de los años.
@@ -44,7 +42,6 @@ const blogPosts = [
     publication_date: '2023-03-15',
   },
   {
-    id: '3',
     title: 'Mariposas y Flores: Una Sinfonía de Colores',
     content: `
       Adéntrate en el mundo encantador de las mariposas y las flores en nuestro Jardín Botánico. Esta entrada celebra la asociación mágica entre estos seres alados y las hermosas flores que los atraen.
@@ -66,31 +63,26 @@ const blogPosts = [
 
 const events = [
   {
-    id: '1',
     title: 'Botanical Garden Tour',
     description: 'Join us for a guided tour of the beautiful botanical garden.',
     date: '2023-03-10',
   },
   {
-    id: '2',
     title: 'Nature Photography Workshop',
     description: 'Learn the art of capturing nature through photography.',
     date: '2023-04-20',
   },
   {
-    id: '3',
     title: 'Tree Planting Day',
     description: 'Help us contribute to the environment by planting trees in the community.',
     date: '2023-05-15',
   },
   {
-    id: '4',
     title: 'Bird Watching Expedition',
     description: 'Explore local bird species in their natural habitat with experienced birdwatchers.',
     date: '2023-06-02',
   },
   {
-    id: '5',
     title: 'Environmental Awareness Seminar',
     description: 'Join experts to learn about environmental issues and how to make a positive impact.',
     date: '2023-07-08',
@@ -99,31 +91,26 @@ const events = [
 
 const trees = [
   {
-    id: '1',
     scientific_name: 'Fraxinus excelsior',
     common_name: 'Common ash, Alm. ask',
     image_url: '/trees/fraxinus-excelsior.png',
   },
   {
-    id: '2',
     scientific_name: 'Crataegus monogyna',
     common_name: 'Common hawthorn, Engriflet hvidtj',
     image_url: '/trees/crataegus-monogyna.png',
   },
   {
-    id: '3',
     scientific_name: 'Pinus sylvestris',
     common_name: 'Scots pine, Skovfyr',
     image_url: '/trees/pinus-sylvestris.png'
   },
   {
-    id: '4',
     scientific_name: 'Populus tremula',
     common_name: 'Aspen, Bævreasp',
     image_url: '/trees/populus-tremula.png'
   },
   {
-    id: '5',
     scientific_name: 'Acer platanoides',
     common_name: 'Norway maple, Spidsløn',
     image_url: '/trees/acer-platanoides.png'
@@ -133,4 +120,3 @@ const trees = [
 module.exports = {
   blogPosts, events, trees
 }
-

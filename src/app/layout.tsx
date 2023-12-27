@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import './globals.css'
 import { lightFont } from './fonts/localFonts'
 import Link from 'next/link';
 import SmoothScroll from './SmoothScroll';
+import './globals.css'
 
 export const metadata: Metadata = {
   title: 'botanical-garden',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 function PathBar() {
   return (
-    <div className="fixed w-full z-[99] mix-blend-difference top-[0%]">
+    <div className="fixed w-full z-[99] mix-blend-difference top-[0%] text-white tracking-[.09em]">
       <div className="py-[24px] px-[32px] flex justify-between items-center">
         <Link href="/" className={`${lightFont.className} text-[1.3em]`}>
           Martín Cárdenas
@@ -44,7 +44,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${lightFont.className} text-[1vw] font-normal leading-none min-h-[100vh] bg-[#020202] text-[#f1f1f1] box-border`}>
+      <body className={`${lightFont.className} text-[1vw] font-normal leading-none min-h-[100vh] bg-[#f2f2f2] text-[#030303] box-border`}>
         <header><PathBar /></header>
         <SmoothScroll>{children}</SmoothScroll>
       </body>
