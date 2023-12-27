@@ -5,7 +5,7 @@ export default function LoginPage() {
   return (
     <Wrapper>
       <div className="py-[72px]">
-        <h2 className="text-[7em]">Login Page</h2>
+        <h2 className="sm:text-[7em] text-[11em]">Login Page</h2>
       </div>
       <LoginForm />
     </Wrapper>

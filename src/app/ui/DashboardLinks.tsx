@@ -14,7 +14,7 @@ export default function DashboardLinks() {
   console.log(pathname);
 
   return (
-    <div className="space-x-10 text-[1.5em] mt-[32px]">
+    <div className="mt-[32px] flex justify-between  text-[4em]  sm:text-[1.5em] sm:block  sm:space-x-10">
       {links.map(({ href, label }, index) =>
         <Link
           key={index}

@@ -3,17 +3,17 @@ import { fetchBlogSummaries, fetchEventsSummaries } from "../lib/data"
 
 export default function Page() {
   return (
-    <div className="text-base flex gap-[5em]">
-      <div className="flex-1">
-        <h2 className="text-[1.5em]">Events Summaries</h2>
-        <Suspense fallback={<div className="mt-[2em]">Loading Events Summaries ...</div>}>
+    <div className="text-base flex gap-[2.5em] sm:flex-row flex-col">
+      <div className="sm:flex-1">
+        <h2 className="sm:text-[1.5em] text-[1.7em]">Events Summaries</h2>
+        <Suspense fallback={<div className="mt-[2.2em]">Loading Events Summaries ...</div>}>
           <EventsSummaries />
         </Suspense>
       </div>
 
-      <div className="flex-1">
-        <h2 className="text-[1.5em]">Blog Posts Summaries</h2>
-        <Suspense fallback={<div className="mt-[2em]">Loading Blog Posts Sumamries ...</div>}>
+      <div className="sm:flex-1">
+        <h2 className="sm:text-[1.5em] text-[1.7em]">Blog Posts Summaries</h2>
+        <Suspense fallback={<div className="mt-[2.2em]">Loading Blog Posts Sumamries ...</div>}>
           <BlogPostsSummaries />
         </Suspense>
       </div>
