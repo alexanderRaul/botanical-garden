@@ -4,7 +4,6 @@ import { z } from 'zod';
 import { sql } from '@vercel/postgres';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
-import { signIn } from 'next-auth/react';
 
 const CreateEventSchema = z.object({
   id: z.string(),
@@ -30,6 +29,7 @@ export async function createEvent(formData: FormData) {
     INSERT INTO events (title, description, date)
     VALUES (${title}, ${content}, ${date})
   `
+
   revalidatePath('/dashboard');
   revalidatePath('/schedule');
   redirect('/dashboard');
@@ -59,6 +59,7 @@ export async function createBlogPost(formData: FormData) {
     INSERT INTO blog_posts (title, content, publication_date)
     VALUES (${title}, ${content}, ${date})
   `
+
   revalidatePath('/dashboard');
   revalidatePath('/blog');
   redirect('/dashboard');

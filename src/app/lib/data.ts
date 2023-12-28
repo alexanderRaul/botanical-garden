@@ -1,7 +1,10 @@
 import { sql } from '@vercel/postgres';
 import { BlogPost, Event, Tree } from './definitions';
+import { unstable_noStore as noStore } from 'next/cache'
 
 export async function fetchTrees() {
+  noStore();
+
   try {
     const data = await sql<Tree>`SELECT * FROM trees`
     return data.rows;
@@ -13,6 +16,8 @@ export async function fetchTrees() {
 }
 
 export async function fetchBlogById(id: string) {
+  noStore();
+
   try {
     const data = await sql<BlogPost>`SELECT title, content, publication_date FROM blog_posts WHERE id = ${id}`
     return data.rows[0];
@@ -25,6 +30,9 @@ export async function fetchBlogById(id: string) {
 }
 
 export async function fetchBlogSummaries() {
+  noStore();
+
+
   try {
 
     // La función realiza la consulta a la base de datos.
@@ -55,6 +63,8 @@ export async function fetchBlogSummaries() {
 // Si la función se comporta según lo esperado en estos casos, se considera que ha pasado la prueba de caja blanca.
 
 export async function fetchEventsSummaries() {
+  noStore();
+
   try {
     const data = await sql<Event>`SELECT title, date, id FROM events`
     return data.rows;
@@ -66,6 +76,8 @@ export async function fetchEventsSummaries() {
 }
 
 export async function fetchEvents() {
+  noStore();
+
   try {
     //    await new Promise((resolve) => setTimeout(resolve, 3000));
 
