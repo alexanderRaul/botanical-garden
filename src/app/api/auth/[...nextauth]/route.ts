@@ -39,7 +39,7 @@ const handler = NextAuth({
           if (!user) return null;
 
           if (password === user.password) {
-            console.log('ok');
+            console.log('login');
             return user;
           }
         }
