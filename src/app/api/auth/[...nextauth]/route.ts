@@ -3,8 +3,11 @@ import CredentialsProvider from 'next-auth/providers/credentials'
 import { sql } from '@vercel/postgres';
 import { z } from 'zod';
 import type { User } from '@/app/lib/definitions';
+import { unstable_noStore as noStore } from "next/cache"
 
 async function getUser(email: string): Promise<User | undefined> {
+  noStore();
+
   try {
     const user = await sql<User>`SELECT * FROM users WHERE email=${email}`;
     return user.rows[0];

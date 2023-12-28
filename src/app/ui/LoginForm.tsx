@@ -3,10 +3,8 @@
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { FormEvent } from 'react'
-import { unstable_noStore as noStore } from 'next/cache'
 
 export default function LoginForm() {
-  noStore();
 
   const router = useRouter();
 
