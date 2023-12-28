@@ -7,7 +7,7 @@ export default function HowWeWork() {
   return (
     <Wrapper>
       <div className="z-[3] py-[72px] relative sm:py-[182px]">
-        <TagBox tag="How We Work" />
+        <TagBox tag="Como Trabajamos" />
         <div className="mt-[42px] text-[7em] divide-y  divide-[rgba(242,242,242,.15)]  border-t border-b border-[rgba(242,242,242,.15)] sm:text-[5.7em]">
           <div className="flex justify-between items-center">
             <span className={`${alpinaFine.className}`}>/ 1</span>
@@ -19,7 +19,7 @@ export default function HowWeWork() {
           </div>
           <div className="flex justify-between items-center">
             <span className={`${alpinaFine.className}`}>/ 3</span>
-            <Link href="/exploration" className="w-[85%] inline-block py-[.8em]">Exploration</Link>
+            <Link href="/exploration" className="w-[85%] inline-block py-[.8em]">Exploración</Link>
           </div>
         </div>
       </div>

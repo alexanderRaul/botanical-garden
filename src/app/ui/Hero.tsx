@@ -3,7 +3,7 @@ import { alpinaFine, romanFont } from "../fonts/localFonts";
 
 export default function Hero() {
   return (
-    <div className="h-screen">
+    <div className="h-screen" data-testid="hero-container">
       <div className="h-full flex flex-col justify-end pt-[20em] pb-[42em] px-[16px] sm:pt-0 sm:pb-0 sm:px-[32px]">
         <h1 className="text-center mt-[20px] leading-[1] z-[3] sm:mt-auto">
           <span className={`text-[5.7em] ${romanFont.className}`}>Jardín Botánico</span>

@@ -6,43 +6,43 @@ export default function AboutUs() {
   return (
     <Wrapper>
       <div className="z-[3] py-[72px] relative sm:py-[182px]">
-        <TagBox tag="About Us" />
+        <TagBox tag="Sobre nosotros" />
 
         <div className="w-[147ch] mt-[42px] sm:mt-[82px] sm:w-[85ch]">
           <h2 className="tracking-[-.01em] text-[8.3em] leading-[1.05] mt-[20px] mb-[10px] sm:text-[4.8em]">
-            10 years of exploration. Brought together to unlock a new era of marketing.
+            61 años de exploración. Reunidos para abrir una nueva era de la botánica
           </h2>
         </div>
 
         <div className="mt-[92px] w-[25ch] ml-auto leading-[1.2] tracking-[.05em] text-[4.25em] sm:mt-[112px] sm:w-[30ch] sm:text-[1.1em]">
           <p>
-            From food and fitness to fintech and crypto, T/T7 has travelled the globe and its
-            varying industries whilst connecting with consumers and their needs.
+            Explorando desde la vegetación hasta los rincones más remotos de nuestro
+            jardín botánico Martin Cardenas, ha recorrido un amplio espectro de paisajes, conectando con visitantes de diversas áreas de interés.
           </p>
           <p className="mt-[16px] ">
-            Striking balance between consistency and luxury. Usability and innovation. Focus and distraction.
+            Concentración en la contemplación de la naturaleza y distracción en la diversidad de nuestras especies.
           </p>
         </div>
 
         <div className="mt-[182px]">
           <div className="text-[4.2em] w-[21.7ch] sm:w-[22ch] sm:text-[1.4em] tracking-[.02em]">
-            In a world full of distractions, it&apos;s time to take back our focus.
+            En un mundo lleno de distracciones, ha llegado el momento de volver a centrarnos.
           </div>
 
-          <div className="sm:w-[78ch] my-[192px] sm:mr-auto sm:ml-auto">
+          <div className="sm:w-[80ch] my-[192px] sm:mr-auto sm:ml-auto">
             <h2 className={`${romanFont.className} text-[8em] text-center tracking-[-.02em] sm:text-[4em] leading-[1]`}>
-              Croos {" "}
-              <span className={`${alpinaFine.className}`}>cultured, multi-disciplinary</span>
-              {" "}— built to{" "}
-              <span className={`${alpinaFine.className}`}>elevate</span>
-              {" "}brands, communication
-              and{" "}
-              <span className={`${alpinaFine.className}`}>advertising</span>
+              Entornos {" "}
+              <span className={`${alpinaFine.className}`}>naturales, multi-disciplinarios</span>
+              {" "}— hechos para{" "}
+              <span className={`${alpinaFine.className}`}>realzar</span>
+              {" "} la experiencia
+              en{" "}
+              <span className={`${alpinaFine.className}`}>nuestro jardin</span>
             </h2>
           </div>
 
           <div className="w-[26ch] text-[4.2em]  sm:w-[24ch] ml-auto sm:text-[1.4em] tracking-[.02em]">
-            Allow your customers to connect with content that is valuable to them.
+            Permite que la gente conecte con la serenidad botánica excepcional.
           </div>
         </div>
 
