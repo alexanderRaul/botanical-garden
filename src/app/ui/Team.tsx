@@ -35,7 +35,7 @@ export default function Team() {
               />
             </div>
             <div className="mt-[12px]  leading-[1.3] sm:mt-[24px] sm:w-[25ch]">
-              <span className="block text-[4.75em] sm:text-[1em]">Liza</span>
+              <span className="block text-[4.75em] sm:text-[1em]">Liam</span>
               <span className="text-[rgba(242,242,242,.5)] text-[4.75em] sm:text-[1em]">Creative</span>
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function Team() {
               />
             </div>
             <div className="mt-[12px]  leading-[1.3] sm:mt-[24px] sm:w-[25ch]">
-              <span className="block text-[4.75em] sm:text-[1em]">Nika</span>
+              <span className="block text-[4.75em] sm:text-[1em]">Mei</span>
               <span className="text-[rgba(242,242,242,.5)] text-[4.75em] sm:text-[1em]">Partnerships</span>
             </div>
           </div>
@@ -59,13 +59,13 @@ export default function Team() {
             <div className="h-[120em] w-[100%] h-[100%] relative sm:h-[35em]">
               <Image
                 className="object-cover"
-                src="/team/servece.jpg"
+                src="/team/service.jpg"
                 alt="a picture of a person"
                 fill
               />
             </div>
             <div className="mt-[12px]  leading-[1.3] sm:mt-[24px] sm:w-[25ch]">
-              <span className="block text-[4.75em] sm:text-[1em]">Kristina</span>
+              <span className="block text-[4.75em] sm:text-[1em]">Ahmed</span>
               <span className="text-[rgba(242,242,242,.5)] text-[4.75em] sm:text-[1em]">Service</span>
             </div>
           </div>
