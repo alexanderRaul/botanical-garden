@@ -5,7 +5,7 @@ import TagBox from "./TagBox";
 export default function Team() {
   return (
     <Wrapper>
-      <div className="z-[3] py-[72px] relative sm:mt-[182px]">
+      <div className="z-[3] py-[72px] relative sm:mt-[182px]" data-testid="team-component">
         <TagBox tag="Conoce Al Equipo" />
 
         <div className="mt-[92px] height-auto flex justify-between flex-col sm:flex-row">

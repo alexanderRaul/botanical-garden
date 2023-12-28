@@ -6,7 +6,7 @@ import { alpinaFine } from "../fonts/localFonts";
 export default function HowWeWork() {
   return (
     <Wrapper>
-      <div className="z-[3] py-[72px] relative sm:py-[182px]">
+      <div className="z-[3] py-[72px] relative sm:py-[182px]" data-testid="how-we-work-container">
         <TagBox tag="Como Trabajamos" />
         <div className="mt-[42px] text-[7em] divide-y  divide-[rgba(242,242,242,.15)]  border-t border-b border-[rgba(242,242,242,.15)] sm:text-[5.7em]">
           <div className="flex justify-between items-center">

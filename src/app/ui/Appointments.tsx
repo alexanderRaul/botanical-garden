@@ -7,7 +7,7 @@ export default function Appointments() {
       <div className="z-[3] py-[72px] relative sm:py-[182px]">
 
         <div className="flex items-center justify-center">
-          <h2 className="text-[12em] leading-[.8] sm:text-[11em] sm:mb-[10px]">RENUNIONES</h2>
+          <h2 className="text-[12em] leading-[.8] sm:text-[11em] sm:mb-[10px]" data-testid="appointments-title">REUNIONES</h2>
         </div>
 
         <div className="max-w-[151ch] text-center flex items-center justify-center mt-[20px] ml-auto mr-auto text-[#f1f1f1] text-[4.3em] sm:max-w-[45ch] sm:mt-[32px] sm:text-[1.25em]">
@@ -19,7 +19,7 @@ export default function Appointments() {
             <Image
               className="object-cover"
               src="/appointments.jpg"
-              alt="image"
+              alt="a picture of botanic garden"
               fill
             />
           </div>
@@ -28,7 +28,7 @@ export default function Appointments() {
             <Image
               className="object-cover"
               src="/appointments.jpg"
-              alt="image"
+              alt="a picture of botanic garden"
               fill
             />
           </div>
@@ -37,7 +37,7 @@ export default function Appointments() {
             <Image
               className="object-cover"
               src="/appointments.jpg"
-              alt="image"
+              alt="a picture of botanic garden"
               fill
             />
           </div>

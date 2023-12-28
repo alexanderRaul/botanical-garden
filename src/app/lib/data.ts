@@ -26,15 +26,33 @@ export async function fetchBlogById(id: string) {
 
 export async function fetchBlogSummaries() {
   try {
+
+    // La función realiza la consulta a la base de datos.
     const data = await sql<BlogPost>`SELECT title, publication_date, id FROM blog_posts`
+
+    // La consulta se resuelve correctamente, y data.rows se llena con los datos reales de la base de datos.
+    // Resultado Esperado:
+    // La función debería devolver los datos reales de la base de datos correctamente.
     return data.rows;
 
   } catch (error) {
-
+    // Simulemos un escenario donde la consulta a la base de datos falla.
+    // La consulta falla, y se ejecuta el bloque catch.
+    // Se imprime un mensaje de error en la consola.
     console.error('Database Error:', error);
-    throw new Error('Failed to fetch events data.');
+
+    // La función arroja un nuevo error con el mensaje 'Failed to fetch blog summaries data.'
+    // Resultado Esperado:
+    // La función debería manejar el error correctamente, imprimir el mensaje de error en la consola
+    // y lanzar un nuevo error con el mensaje adecuado.
+    throw new Error('Failed to fetch blog summaries data.');
   }
 }
+
+// Conclusiones:
+// La función debería manejar correctamente tanto el caso exitoso como el de error.
+// Los resultados obtenidos manualmente deberían coincidir con las expectativas definidas.
+// Si la función se comporta según lo esperado en estos casos, se considera que ha pasado la prueba de caja blanca.
 
 export async function fetchEventsSummaries() {
   try {

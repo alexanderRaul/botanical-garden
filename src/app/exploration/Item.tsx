@@ -7,11 +7,11 @@ import { romanFont } from "../fonts/localFonts";
 
 export default function Item({ tree, i, item, onClick }: any) {
   const { scientific_name, common_name, image_url }: Tree = tree;
-  const [f, s] = common_name.split(",");
-  console.log({ f, s });
+  const [firstCommonName, secondCommonName] = common_name.split(",");
 
   return (
     <motion.div
+      data-testid="item"
       layout
       data-isopen={item === i}
       onClick={() => onClick(i)}
@@ -35,8 +35,8 @@ export default function Item({ tree, i, item, onClick }: any) {
       >
         <span className={`${romanFont.className} text-[3em]`}>{scientific_name}</span>
         <div className="text-[2em] mt-[15px]">
-          <span className="block">― {" "}{f}</span>
-          <span>― {" "}{s}</span>
+          <span className="block">― {" "}{firstCommonName}</span>
+          <span>― {" "}{secondCommonName}</span>
         </div>
       </div>
     </motion.div>

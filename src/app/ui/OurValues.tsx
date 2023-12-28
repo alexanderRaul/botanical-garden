@@ -5,7 +5,7 @@ import { alpinaFine } from "../fonts/localFonts";
 export default function OurValues() {
   return (
     <Wrapper>
-      <div className="z-[3] py-[72px] relative sm:py-[182px]">
+      <div className="z-[3] py-[72px] relative sm:py-[182px]" data-testid="our-values-container">
         <TagBox tag="Nuestros Valores" />
         <div className="mt-[42px] text-[14em] tracking-[-.03em] sm:mt-[82px] sm:text-[9em]">
           Conservación

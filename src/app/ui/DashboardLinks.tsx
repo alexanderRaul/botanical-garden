@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { signOut } from "next-auth/react"
 
 const links = [
   { href: '/dashboard', label: 'Summaries' },
@@ -11,7 +12,10 @@ const links = [
 
 export default function DashboardLinks() {
   const pathname = usePathname();
-  console.log(pathname);
+
+  const handleLogout = () => {
+    signOut();
+  }
 
   return (
     <div className="mt-[32px] flex justify-between  text-[4em]  sm:text-[1.5em] sm:block  sm:space-x-10">
@@ -24,6 +28,8 @@ export default function DashboardLinks() {
           {label}
         </Link>
       )}
+
+      <button onClick={handleLogout}>logout</button>
     </div>
   )
 }

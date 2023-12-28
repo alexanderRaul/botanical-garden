@@ -10,7 +10,6 @@ const links = [
   { href: '/exploration', label: 'exploration' },
 ]
 
-
 const menuLinks = [
   { href: '/', label: 'home' },
   ...links,
@@ -39,7 +38,7 @@ export default function PathBar() {
         </div>
       }
 
-      <div className="fixed w-full z-[99] mix-blend-difference top-[0%] text-white tracking-[.09em]">
+      <div className="fixed w-full z-[99] mix-blend-difference top-[0%] text-white tracking-[.09em]" data-testid="path-bar">
         <div className="py-[24px] px-[32px] flex justify-between items-center">
           <Link href="/" className={`${lightFont.className} text-[2.5em]  sm:text-[1.2em]`}>
             Martín Cárdenas
@@ -70,5 +69,3 @@ export default function PathBar() {
     </>
   );
 }
-
-

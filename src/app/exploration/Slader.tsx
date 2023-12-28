@@ -4,7 +4,6 @@ import { useState } from "react"
 import { Tree } from "../lib/definitions";
 import Item from "./Item";
 
-
 export default function Slader({ trees }: { trees: Tree[] }) {
   const [item, setItem] = useState<number | null>(null);
 

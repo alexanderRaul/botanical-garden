@@ -5,7 +5,7 @@ import { alpinaFine, romanFont } from "../fonts/localFonts";
 export default function AboutUs() {
   return (
     <Wrapper>
-      <div className="z-[3] py-[72px] relative sm:py-[182px]">
+      <div className="z-[3] py-[72px] relative sm:py-[182px]" data-testid="about-us-container">
         <TagBox tag="Sobre nosotros" />
 
         <div className="w-[147ch] mt-[42px] sm:mt-[82px] sm:w-[85ch]">
