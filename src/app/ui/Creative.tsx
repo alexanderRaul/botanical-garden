@@ -18,7 +18,7 @@ export default function Creative() {
         <div className="w-auto flex justify-center items-center mt-[32px] ml-auto mr-auto sm:w-[57ch] sm:mt-[42px]">
           <div className="text-center tracking-[.05em] leading-[1.2] text-[4.25em] sm:text-sm">
             Ya sea en una tarde tranquila explorando el jardín o en una temprana revisión botánica,
-            — nuestra ambición es estar presente, entregando mente y cuerpo al "ahora" natural.
+            — nuestra ambición es estar presente, entregando mente y cuerpo al &quot;ahora&quot; natural.
           </div>
         </div>
       </div>
